@@ -103,6 +103,29 @@ function add_custom_fields() {
                         ],
                     ]
                 ),
+                acf_layout(
+                    [
+                        'name' => 'image-block',
+                        'label' => __('Image Block', 'portfolio-piece'),
+                        'sub_fields' => [
+                            acf_image(
+                                [
+                                    'name' => 'image',
+                                    'label' => __('Image', 'portfolio-piece'),
+                                    'min_width' => 1500,
+                                    'preview_size' => 'large',
+                                ]
+                            ),
+                            acf_wysiwyg(
+                                [
+                                    'name' => 'text',
+                                    'label' => __('Text', 'portfolio-piece'),
+                                    'media_upload' => false,
+                                ]
+                            ),
+                        ],
+                    ]
+                ),
             ],
         ]
     );
