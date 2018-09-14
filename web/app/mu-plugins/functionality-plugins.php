@@ -1,2 +1,2 @@
 <?php
-require_once 'porfolio-piece/porfolio-piece.php';
+require_once 'portfolio-piece/portfolio-piece.php';

@@ -5,6 +5,7 @@ web/app/mu-plugins/*/
 web/app/upgrade
 web/app/uploads/*
 !web/app/uploads/.gitkeep
+!web/app/mu-plugins/portfolio-piece
 
 # WordPress
 web/wp
@@ -18,3 +19,6 @@ web/.htaccess
 # Composer
 vendor/*
 !vendor/.gitkeep
+
+# Codesniffer
+wpcs/*
