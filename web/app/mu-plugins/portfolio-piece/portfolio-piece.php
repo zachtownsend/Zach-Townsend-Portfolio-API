@@ -17,7 +17,7 @@ require_once 'vendor/autoload.php';
 add_action( 'init', 'add_portfolio_cpt' );
 
 /**
- * Adds Portfolio CPT
+ * Define Projects CPT
  */
 function add_portfolio_cpt() {
 	register_extended_post_type(
@@ -74,7 +74,7 @@ function add_portfolio_cpt() {
 add_action( 'plugins_loaded', 'add_custom_fields', 10000 );
 
 /**
- * Doc comment
+ * Add ACF Fields
  */
 function add_custom_fields() {
 	$project_content = acf_flexible_content(
