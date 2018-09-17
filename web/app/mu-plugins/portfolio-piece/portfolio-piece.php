@@ -14,12 +14,13 @@
 // Your code starts here.
 require_once 'vendor/autoload.php';
 
-add_action( 'init', 'add_portfolio_cpt' );
+add_action('init', 'add_portfolio_cpt');
 
 /**
  * Define Projects CPT
  */
-function add_portfolio_cpt() {
+function add_portfolio_cpt()
+{
 	register_extended_post_type(
 		'project',
 		[
@@ -142,6 +143,29 @@ function add_custom_fields() {
 					acf_location( 'post_type', 'project' ),
 				],
 			],
+		]
+	);
+
+	acf_field_group(
+		[
+			'title'  => __( 'Home Page Content', 'portfolio-piece' ),
+			'fields' => [
+				acf_text(
+					[
+						'name'  => 'title',
+						'label' => 'Title',
+					]
+				),
+			],
+			'styles'   => 'seamless',
+			'location' => [
+				[
+					acf_location( 'page_type', 'front_page' ),
+				]
+			],
+			'hide_on_screen' => [
+				'the_content',
+			]
 		]
 	);
 }
