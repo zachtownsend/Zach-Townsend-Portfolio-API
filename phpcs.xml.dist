@@ -12,7 +12,7 @@
 	<!-- Show progress and sniff codes in all reports -->
 	<arg value="ps"/>
 
-  <!-- <config name="installed_paths" value="wpcs" /> -->
+  <config name="installed_paths" value="wpcs" />
 
 	<exclude-pattern>*/node_modules/*</exclude-pattern>
 	<exclude-pattern>*/vendor/*</exclude-pattern>
