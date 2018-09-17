@@ -23,7 +23,6 @@ end_of_line = crlf
 
 [*.php]
 indent_size = 4
-indent_style = tab
 
 [resources/views/**.php]
 indent_size = 2
