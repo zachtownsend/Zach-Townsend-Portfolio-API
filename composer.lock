@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "fac882e0a175cb3cdb9cea0655344629",
+    "content-hash": "d719bb808f233370b925d806100e52e1",
     "packages": [
         {
             "name": "advanced-custom-fields/advanced-custom-fields-pro",
@@ -473,6 +473,26 @@
                 "environment"
             ],
             "time": "2018-07-29T20:33:41+00:00"
+        },
+        {
+            "name": "wpackagist-plugin/acf-image-crop-add-on",
+            "version": "1.4.12",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/acf-image-crop-add-on/",
+                "reference": "tags/1.4.12"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/acf-image-crop-add-on.1.4.12.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/acf-image-crop-add-on/"
         },
         {
             "name": "wpackagist-plugin/acf-to-rest-api",
